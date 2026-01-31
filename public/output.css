@@ -1788,28 +1788,6 @@
   .box-border {
     box-sizing: border-box;
   }
-  .badge {
-    @layer daisyui.l1.l2.l3 {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: calc(0.25rem * 2);
-      border-radius: var(--radius-selector);
-      vertical-align: middle;
-      color: var(--badge-fg);
-      border: var(--border) solid var(--badge-color, var(--color-base-200));
-      font-size: 0.875rem;
-      width: fit-content;
-      background-size: auto, calc(var(--noise) * 100%);
-      background-image: none, var(--fx-noise);
-      background-color: var(--badge-bg);
-      --badge-bg: var(--badge-color, var(--color-base-100));
-      --badge-fg: var(--color-base-content);
-      --size: calc(var(--size-selector, 0.25rem) * 6);
-      height: var(--size);
-      padding-inline: calc(var(--size) / 2 - var(--border));
-    }
-  }
   .flex {
     display: flex;
   }
@@ -1833,6 +1811,9 @@
   }
   .h-32 {
     height: calc(var(--spacing) * 32);
+  }
+  .h-60 {
+    height: calc(var(--spacing) * 60);
   }
   .w-full {
     width: 100%;
@@ -1889,6 +1870,9 @@
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
@@ -1933,9 +1917,6 @@
   }
   .bg-\[\#F3F3F3\] {
     background-color: #F3F3F3;
-  }
-  .bg-\[\#F8F8F8\] {
-    background-color: #F8F8F8;
   }
   .bg-\[\#FFFDE7\] {
     background-color: #FFFDE7;
@@ -2055,9 +2036,6 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
-  .text-wrap {
-    text-wrap: wrap;
-  }
   .text-\[\#111111\] {
     color: #111111;
   }
@@ -2105,10 +2083,6 @@
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
-  .ease-in-out {
-    --tw-ease: var(--ease-in-out);
-    transition-timing-function: var(--ease-in-out);
   }
   .ease-out {
     --tw-ease: var(--ease-out);

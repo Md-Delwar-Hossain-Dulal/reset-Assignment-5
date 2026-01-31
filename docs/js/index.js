@@ -33,10 +33,10 @@ document
     }
     const div = document.createElement("div");
     div.innerHTML = `
-                    <div class="flex flex-col mt-10 bg-white border rounded-2xl border-[#e7e7e7] h-28 items-center justify-center shadow-sm">
+                    <div class=" p-8 mt-10 flex flex-col bg-white border rounded-2xl border-[#e7e7e7]  items-center justify-center shadow-sm">
                        <h2 class="font-bold text-lg"> ${inputNoakhali}Taka is Donated for famine-2024 at Feni,Bangladesh</h2>
                        <p> Date ${new Date()} </p>
-                  </div>
+                  </div> 
     
     `;
     document.getElementById("contentHistory").appendChild(div);
@@ -77,7 +77,7 @@ document
 
     const div = document.createElement("div");
     div.innerHTML = `
-                    <div class="flex flex-col mt-10 bg-white border rounded-2xl border-[#e7e7e7] h-28 items-center justify-center shadow-sm">
+                    <div class="p-8 mt-10 flex flex-col bg-white border rounded-2xl border-[#e7e7e7] items-center justify-center shadow-sm">
                        <h2 class="font-bold text-lg"> ${inputfeni} Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
                        <p> Date ${new Date()} </p>
                   </div>
@@ -115,7 +115,7 @@ document
     }
     const div = document.createElement("div");
     div.innerHTML = `
-                    <div class="flex flex-col mt-10 bg-white border rounded-2xl border-[#e7e7e7] h-28 items-center justify-center shadow-sm">
+                    <div class=" p-8 flex flex-col mt-10 bg-white border rounded-2xl border-[#e7e7e7]  items-center justify-center shadow-sm">
                        <h2 class="font-bold text-lg"> ${inputQuota} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2>
                        <p> Date ${new Date()} </p>
                   </div>
