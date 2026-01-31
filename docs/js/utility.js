@@ -18,3 +18,13 @@ function showSectionById(id) {
   // show the section with the provide id as parameter ( ‍দেখাবে যেইটা তে প্যারামিটিার দিয়ে দেখাবো)
   document.getElementById(id).classList.remove("hidden");
 }
+
+function showColorById(id) {
+  document
+    .getElementById("showDonation")
+    .classList.add("bg-[#F8F8F8],text-[#111111b3]");
+  document
+    .getElementById("showHistory")
+    .classList.add("bg-[#F8F8F8], text-[#111111b3]");
+  document.getElementById(id).classList.add("bg-lime-400", "text-black");
+}
