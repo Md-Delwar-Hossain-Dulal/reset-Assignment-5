@@ -1,4 +1,3 @@
-console.log("ut");
 // ইনপুট ফিল্ড থেকে সংখ্যা বের করবে
 function getInputFieldValueById(id) {
   const inputValue = document.getElementById(id).value;
@@ -19,12 +18,28 @@ function showSectionById(id) {
   document.getElementById(id).classList.remove("hidden");
 }
 
-// function showColorById(id) {
-//   document
-//     .getElementById("showDonation")
-//     .classList.add("bg-[#F8F8F8],text-[#111111b3]");
-//   document
-//     .getElementById("showHistory")
-//     .classList.add("bg-[#F8F8F8], text-[#111111b3]");
-//   document.getElementById(id).classList.add("bg-lime-400", "text-black");
-// }
+//! >>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Donation বাটনের জন্য ফাংশন <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+function showDonationColorById(id) {
+  document
+    .getElementById("showDonation")
+    .classList.add("bg-[#B4F461]", "text-black");
+  document.getElementById("showDonation").classList.remove("text-[#111111b3]");
+  // history btn
+  document
+    .getElementById("showHistory")
+    .classList.remove("bg-[#B4F461]", "text-black");
+  document.getElementById("showHistory").classList.add("text-[#111111b3]");
+}
+
+// !>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> History বাটনের জন্য ফাংশন <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+function showHistoryColorById(id) {
+  document
+    .getElementById("showHistory")
+    .classList.add("bg-[#B4F461]", "text-black");
+  document.getElementById("showHistory").classList.remove("text-[#111111b3]");
+  // *Donation btn
+  document
+    .getElementById("showDonation")
+    .classList.remove("bg-[#B4F461]", "text-black");
+  document.getElementById("showDonation").classList.add("text-[#111111b3]");
+}
