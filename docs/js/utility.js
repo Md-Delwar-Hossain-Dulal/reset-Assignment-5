@@ -14,17 +14,17 @@ function getTextFieldValueById(id) {
 function showSectionById(id) {
   // hide all the section
   document.getElementById("mainContent").classList.add("hidden");
-  document.getElementById("contentHistory").classList.add("hidden");
-  // show the section with the provide id as parameter ( ‍দেখাবে যেইটা তে প্যারামিটিার দিয়ে দেখাবো)
+  document.getElementById("history-section").classList.add("hidden");
+  // প্যারামিটিার দিয়ে দেখাবো
   document.getElementById(id).classList.remove("hidden");
 }
 
-function showColorById(id) {
-  document
-    .getElementById("showDonation")
-    .classList.add("bg-[#F8F8F8],text-[#111111b3]");
-  document
-    .getElementById("showHistory")
-    .classList.add("bg-[#F8F8F8], text-[#111111b3]");
-  document.getElementById(id).classList.add("bg-lime-400", "text-black");
-}
+// function showColorById(id) {
+//   document
+//     .getElementById("showDonation")
+//     .classList.add("bg-[#F8F8F8],text-[#111111b3]");
+//   document
+//     .getElementById("showHistory")
+//     .classList.add("bg-[#F8F8F8], text-[#111111b3]");
+//   document.getElementById(id).classList.add("bg-lime-400", "text-black");
+// }
